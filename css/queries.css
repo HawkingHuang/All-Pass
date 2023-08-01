@@ -1,0 +1,151 @@
+/* Below 1344px */
+@media (max-width: 84em) {
+  .plans-freedom-plans-box {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3.6rem;
+  }
+
+  .plan3 {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 42.5%;
+  }
+
+  .footer-boxs {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    text-align: center;
+  }
+
+  .logo-col {
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+}
+
+/* Below 1088px */
+@media (max-width: 68em) {
+  .introduction {
+    grid-template-columns: 1fr;
+    gap: 4.4rem;
+  }
+
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .brand-logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .plans-freedom-plans-box {
+    grid-template-columns: 1fr;
+  }
+
+  .plan {
+    width: 63.75%;
+  }
+}
+
+/* Below 896px */
+@media (max-width: 56em) {
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-section {
+    background-color: rgb(255, 255, 255, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+
+    /* Hide nav */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav-section {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-circle-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-section-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-section-link:link,
+  .nav-section-link:visited {
+    background-color: #ffe066;
+    padding: 1.2rem 1.4rem;
+    border-radius: 10px;
+  }
+
+  .nav-section-link:hover,
+  .nav-section-link:active {
+    color: #495057;
+  }
+
+  .testimonials-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Below 768px */
+@media (max-width: 48em) {
+  .introduction {
+    padding: 2rem 2rem;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .footer-boxs {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-col {
+    grid-row: 4;
+  }
+}
+
+/* Below 608px */
+@media (max-width: 38em) {
+  .brands-section {
+    padding: 2rem 2rem;
+  }
+
+  .plans-freedom-section {
+    padding: 2rem 2rem;
+  }
+
+  .testimonials-section {
+    padding: 2rem 2rem;
+  }
+
+  .footer-section {
+    padding: 2rem 2rem;
+  }
+}
